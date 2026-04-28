@@ -1,0 +1,17 @@
+{
+  "prompt": "Retro-futurist mountain observatory at dusk, aurora ribbons, reflective lake, cinematic volumetric light, crisp architecture, richly detailed sky",
+  "negativePrompt": "text, watermark, blurry, low contrast, duplicate structures, extra towers",
+  "seed": 41,
+  "scheduler": "dpmpp-2m-karras",
+  "width": 768,
+  "height": 512,
+  "steps": 28,
+  "guidanceScale": 6.5,
+  "previewFrames": 4,
+  "denoiseWindows": [6, 8, 7, 7],
+  "latentMsPerWindow": [96, 108, 102, 104],
+  "decodeMs": 132,
+  "safetyMs": 48,
+  "promptTag": "observatory-aurora-v1",
+  "palette": ["#0f172a", "#1d4ed8", "#9333ea", "#f472b6", "#f59e0b", "#e2e8f0"]
+}

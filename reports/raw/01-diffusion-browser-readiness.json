@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repo": "exp-diffusion-webgpu-browser",
+    "commit": "624d07f",
+    "timestamp": "2026-05-20T15:41:19.620Z",
+    "owner": "ai-webgpu-lab",
+    "track": "multimodal",
+    "scenario": "diffusion-webgpu-browser-readiness",
+    "notes": "promptTag=observatory-aurora-v1; scheduler=dpmpp-2m-karras; resolution=768x512; seed=41; steps=28; previews=4; backend=webgpu; fallback=false; safety=pass; automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-05-20T15:41:21.961Z",
+      "captured_by": "codex"
+    },
+    "capture_scenario_id": "01-diffusion-browser-readiness"
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 32,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "navigator.gpu available",
+      "required_features": [
+        "shader-f16"
+      ],
+      "limits": {
+        "maxStorageBuffersPerShaderStage": 8,
+        "maxTextureDimension2D": 8192
+      }
+    },
+    "backend": "webgpu",
+    "fallback_triggered": false,
+    "worker_mode": "worker",
+    "cache_state": "warm"
+  },
+  "workload": {
+    "kind": "diffusion",
+    "name": "diffusion-webgpu-browser-readiness",
+    "input_profile": "768x512-28-steps",
+    "model_id": "deterministic-diffusion-browser-v1",
+    "dataset": "diffusion-fixture-v1"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 757.4,
+      "init_ms": 590,
+      "success_rate": 1,
+      "peak_memory_note": "32 GB reported by browser",
+      "error_type": ""
+    },
+    "diffusion": {
+      "sec_per_image": 0.59,
+      "steps_per_sec": 68.29,
+      "resolution_success_rate": 1,
+      "oom_or_fail_rate": 0
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/01-diffusion-browser-readiness.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/exp-diffusion-webgpu-browser/",
+    "runtime_adapter": {
+      "id": "deterministic-mock",
+      "label": "Deterministic Mock",
+      "version": "1.0.0",
+      "capabilities": [
+        "prefill",
+        "decode",
+        "fixed-output-budget"
+      ],
+      "loadType": "synchronous",
+      "isReal": false,
+      "status": "deterministic",
+      "message": "Deterministic harness — replace by registering a real adapter."
+    },
+    "screenshots": [
+      "./reports/screenshots/01-diffusion-browser-readiness.png"
+    ]
+  }
+}
